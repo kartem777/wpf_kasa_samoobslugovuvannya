@@ -1,0 +1,72 @@
+﻿<Window x:Class="wpf_proj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_proj"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="600">
+    <!--<DockPanel LastChildFill="True">
+        <TextBlock DockPanel.Dock="Top"/>
+        <Button Background="Lavender" DockPanel.Dock="Left"/>
+        <Button Background="Lavender" DockPanel.Dock="Right"/>
+        <Button Background="Lavender" Content="Btn" DockPanel.Dock="Bottom"/>
+        <StackPanel>
+            <Button Background="Red" Width="50" Height="30" Margin="3 3 3 3"/>
+            <Button Background="Red" Width="50" Height="30" Margin="3 3 3 3"/>
+            <Button Background="Red" Width="50" Height="30" Margin="3 3 3 3"/>
+            <Button Background="Red" Width="50" Height="30" Margin="3 3 3 3"/>
+        </StackPanel>
+    </DockPanel>-->
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="8" Foreground="White"> Menu </TextBlock>
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="8" Foreground="White" x:Name="tprice">Total price: 0.00</TextBlock>
+        <Button Grid.Row="3" Grid.Column="0" Content="Bread" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="1" Content="Meat" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="2" Content="Fish" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="3" Content="Milk" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="4" Content="Jogurt" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="5" Content="Butter" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="6" Content="Water" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="3" Grid.Column="7" Content="Sprite" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+
+        <Button Grid.Row="4" Grid.Column="0" Content="Pineapple" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="1" Content="Apple" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="2" Content="Avocado" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="3" Content="Tomato" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="4" Content="Cucumber" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="5" Content="Something" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="6" Content="Cola" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="4" Grid.Column="7" Content="Fanta" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+
+        <Button Grid.Row="5" Grid.Column="0" Content="Beer Dark" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="1" Content="Beer Light" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="2" Content="Something 2" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="3" Content="Something 3" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="4" Content="Something 4" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="5" Content="Something 5" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="6" Content="Something 6" Foreground="White" Background="Black" BorderBrush="Gold" Click="Button_Click"></Button>
+        <Button Grid.Row="5" Grid.Column="7" Content="Delete Last" Foreground="White" Background="Black" BorderBrush="Red" Click="Button_Click_1"></Button>
+        <Button Background="Gold" Grid.Row="7" Grid.ColumnSpan="8" Content="Buy" Click="Button_Click_2"></Button>
+    </Grid>
+</Window>
